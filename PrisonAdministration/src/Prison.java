@@ -3,6 +3,8 @@ import java.util.ArrayList;
 
 public class Prison {
     private ArrayList<Prisoner> prisoners = new ArrayList<>();
+    private ArrayList<Cell> cells = new ArrayList<>();
+    private ArrayList<HoldingCell> holdingCells = new ArrayList<>();
 
     public Prison() {
         prisoners.add(new Prisoner("jack the ripper", "Murder", 38, 40, "yes"));
@@ -11,8 +13,40 @@ public class Prison {
         prisoners.add(new Prisoner("Harry_poter", "killing voldemort", 18, 3, "yes"));
         prisoners.add(new Prisoner("Demo_dog", "attempted to kill eleven", 2, 2, "yes"));
         prisoners.add(new Prisoner("nathan", "attempted to kill deez nuts", 18, 2, "false"));
+    }
+
+    //normalCell
+    public void addCell(Prisoner prisoner){
+        Cell result = new Cell(prisoner);
+        cells.add(0, result);
+    }
+
+    //normalCell
+    public int returnOccupiedCells(){
+        return cells.size();
+    }
+    //normalCell
+    public void returnAListOfOccupiedCells(){
+        for (int i = 0; i < cells.size(); i++) {
+            System.out.println(cells.get(i).toString());
+        }
+    }
 
 
+    //Done
+    public void addCellHolding(Prisoner prisoner, int maxAmountOfPrisoners){
+        HoldingCell result = new HoldingCell(prisoner, maxAmountOfPrisoners);
+        holdingCells.add(0, result);
+    }
+
+    public int returnOccupiedHoldingCells(){
+        return holdingCells.size();
+    }
+
+    public void returnAListOfOccupiedHoldingCells(){
+        for (int i = 0; i < holdingCells.size(); i++) {
+            System.out.println(holdingCells.get(i).toString());
+        }
     }
 
     public void addPrisoner(Prisoner prisoner) {
@@ -20,11 +54,23 @@ public class Prison {
         System.out.println(prisoner.toString() + " added");
     }
 
-    public void addPrisoners( ArrayList newPrisoners){
-        prisoners.addAll(0, newPrisoners);
+    public void removePrisoner(String name) {
+        String lowerCaseName = name.toLowerCase();
+        System.out.println(prisoners.size());
+        for (int i = 0; i < prisoners.size(); i++) {
+            if(prisoners.get(i).getName().contains(lowerCaseName)){
+                System.out.println("Removed "+ prisoners.get(i));
+                prisoners.remove(i);
 
-      //System.out.println(prisoner.toString() + " added");
+            }
+        }
+        System.out.println(prisoners.size());
     }
+
+    public void addPrisoners( ArrayList<Prisoner> newPrisoners){
+        prisoners.addAll(0, newPrisoners);
+    }
+
    public void returnAllPrisoners() {
         for (Prisoner prisoner : prisoners) {
             System.out.println(prisoner.toString());

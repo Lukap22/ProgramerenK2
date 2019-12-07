@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/E-mail systeem/E-mail systeem.iml" filepath="$PROJECT_DIR$/E-mail systeem/E-mail systeem.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrisonAdministration/PrisonAdministration.iml" filepath="$PROJECT_DIR$/PrisonAdministration/PrisonAdministration.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProgramerenK2.iml" filepath="$PROJECT_DIR$/ProgramerenK2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/W4 HomeAutomationSysteem/W4 HomeAutomationSysteem.iml" filepath="$PROJECT_DIR$/W4 HomeAutomationSysteem/W4 HomeAutomationSysteem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week 4 calender/Week 4.iml" filepath="$PROJECT_DIR$/Week 4 calender/Week 4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week 4 calender/Week 4 ODR 234.iml" filepath="$PROJECT_DIR$/Week 4 calender/Week 4 ODR 234.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week 4 calender/Week 4 Opdracht 234.iml" filepath="$PROJECT_DIR$/Week 4 calender/Week 4 Opdracht 234.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week 4 opdracht 234/Week 4 opdracht 234.iml" filepath="$PROJECT_DIR$/Week 4 opdracht 234/Week 4 opdracht 234.iml" />
     </modules>
   </component>
 </project>
