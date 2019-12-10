@@ -1,5 +1,5 @@
 public class Lamp {
-    protected boolean light = false;
+    private boolean light;
 
     public void setOn(){
         light = true;
@@ -10,7 +10,7 @@ public class Lamp {
     @Override
     public String toString() {
         String result;
-        if(light == true){
+        if(light){
             result = "on";
         } else {
             result = "off";

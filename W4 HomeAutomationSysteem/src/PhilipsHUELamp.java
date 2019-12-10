@@ -1,8 +1,8 @@
 public class PhilipsHUELamp extends DimbareLamp {
 
-    protected int colorRed;
-    protected int colorGreen;
-    protected int colorBlue;
+    private int colorRed;
+    private int colorGreen;
+    private int colorBlue;
 
     public void setColor(int red, int green, int blue){
         colorRed = red;
@@ -14,12 +14,6 @@ public class PhilipsHUELamp extends DimbareLamp {
 
     @Override
     public String toString() {
-        String result;
-        if(light == true){
-            result = "on";
-        } else {
-            result = "off";
-        }
-        return result + ", with a brightness of " + brightness +"%" + " and RGB color " + "("+ colorRed + "," + colorGreen + "," + colorBlue + ")" ;
+        return super.toString() + " and RGB color " + "("+ colorRed + "," + colorGreen + "," + colorBlue + ")" ;
     }
 }
