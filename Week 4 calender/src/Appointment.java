@@ -1,8 +1,8 @@
 import java.time.LocalDate;
 
 public class Appointment {
-    protected String description;
-    protected LocalDate date;
+    private String description;
+    private LocalDate date;
 
 
 

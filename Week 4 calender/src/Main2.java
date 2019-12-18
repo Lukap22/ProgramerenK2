@@ -13,9 +13,5 @@ public class Main2 {
         Appointment test = new Appointment("test", 2019, 12, 7);
         System.out.println("\n");
         calender.checkMyAppointmetsPerMonth(12,7);
-
-
-
-
     }
 }

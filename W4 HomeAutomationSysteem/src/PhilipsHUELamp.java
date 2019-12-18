@@ -1,5 +1,4 @@
 public class PhilipsHUELamp extends DimbareLamp {
-
     private int colorRed;
     private int colorGreen;
     private int colorBlue;
@@ -8,9 +7,8 @@ public class PhilipsHUELamp extends DimbareLamp {
         colorRed = red;
         colorGreen = green;
         colorBlue = blue;
+        setBrightness(100);
     }
-
-
 
     @Override
     public String toString() {

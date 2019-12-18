@@ -1,5 +1,5 @@
 public class DimbareLamp extends Lamp{
-    private int brightness = 100;
+    private int brightness;
 
 
     public void setBrightness(int newbrightness){
